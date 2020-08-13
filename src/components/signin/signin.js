@@ -20,7 +20,7 @@ export default class Sign extends React.Component{
     handleSubmit = (event) => {
         event.preventDefault();
 
-        this.state({email:' ',password:' '})
+        this.setState({email:'',password:''});
     }
 
     handleChange = (event) => {
