@@ -6,14 +6,14 @@ import Product from '../product/product';
 
 const Category = ({title, items}) => (
     <div className="collection-preview">
-        <h1 className="title">{title}</h1>
+        <h1 className="title">{title.toUpperCase()}</h1>
         <div className="preview">
             {
                 items
                 .filter((item, idx)=>idx <4)
                 // control display how many product item under category
-                .map(({id, ...otherItemProps})=>(
-                    <Product key={id} {...otherItemProps}/>
+                .map((item)=>(
+                    <Product key={item.id} item={item}/>
                 ))
             }
         </div>
