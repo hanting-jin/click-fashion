@@ -11,7 +11,7 @@ const MenuItem = ({title, imageUrl, size, linkUrl, history, match}) => (
                 }}>
                     <div className="content">
                     <div className="title">{title.toUpperCase()}</div>
-                    {/* Invoke toUpperCase() function to uppercase letters. */}
+                 
                     <div className="subtitle">SHOP NOW</div>
                 </div>
             </div>

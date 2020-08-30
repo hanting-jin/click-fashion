@@ -11,7 +11,7 @@ const Category = ({title, items}) => (
             {
                 items
                 .filter((item, idx)=>idx <4)
-                // control display how many product item under category
+              
                 .map((item)=>(
                     <Product key={item.id} item={item}/>
                 ))

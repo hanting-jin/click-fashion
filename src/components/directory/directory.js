@@ -11,7 +11,7 @@ const Directory = ({sections}) =>(
   <div className="directory">
           {
             sections.map(({ id, ...otherSectionProps}) => (
-              // put title, imageUrl, size, linkUrl into ...otherSectionProps state value collection, because MenuItem component doesn't need ID so that don't pass it.
+            
               <MenuItem 
                 key = {id}
                 {...otherSectionProps}
