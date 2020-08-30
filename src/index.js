@@ -4,7 +4,7 @@ import App from './App';
 import './index.css';
 
 // react rooter
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 // redux
 import {Provider} from 'react-redux';
