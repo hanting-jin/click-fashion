@@ -44,6 +44,7 @@
   
     .content {
       height: 90px;
+      width: fit-content;
       display: flex;
       flex-direction: column;
       -webkit-box-align: center;
@@ -53,6 +54,11 @@
       background-color: white;
       opacity: 0.7;
       position: absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      margin:auto;
       padding: 0px 25px;
       border-width: 1px;
       border-style: solid;
