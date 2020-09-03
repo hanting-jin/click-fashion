@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import './collection.scss'
 
 import {selectCollection} from '../../redux/shop/shop.selector'
-import Product from '../../components/product/product'
+import CollectionItem from '../../components/collection-item/collection-item'
 
 
 const CollectionPage = ({collection}) => {
@@ -15,7 +15,7 @@ const CollectionPage = ({collection}) => {
         <h2 className='title'>{title}</h2>
         <div className='items'>
             {items.map(item => (
-            <Product key={item.id} item={item} />
+            <CollectionItem key={item.id} item={item} />
             ))}
         </div>
     </div> 
