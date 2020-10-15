@@ -10,7 +10,6 @@ import Header from './components/header/header';
 import SignInAndSignUpPage from './pages/Sign-in-and-Sign-up/Sign-in-and-Sign-up';
 import CheckoutPage from './pages/Checkout/checkout';
 
-import { auth, createUserProfileDocument } from './firebase/firebase.utils'
 
 // redux
 import {connect} from 'react-redux';
@@ -28,7 +27,7 @@ class App extends React.Component {
     const {setCurrentUser} = this.props;
 
     // subscribeFormAuth.
-    this.unsubscribeFormAuth = auth.onAuthStateChanged(async userAuth => {
+    /* this.unsubscribeFormAuth = auth.onAuthStateChanged(async userAuth => {
      if (userAuth){
 
        const userRef = await createUserProfileDocument(userAuth);
@@ -42,7 +41,7 @@ class App extends React.Component {
      }
 
      setCurrentUser(userAuth);
-    });  
+    });   */
   }
 
 componentWillUnmont(){
